@@ -3,7 +3,7 @@
 include('header.php');
 ?>
 
-<h1 class="text-info text-center p-3">E-VOTING SYSTEM</h1>
+<h1 class="text-white text-center p-3">E-VOTING SYSTEM</h1>
     <div class="bg-white py-4">
         <h2 class="text-center">Admin Login</h2>
         <div class="container text-center">

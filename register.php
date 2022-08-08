@@ -13,8 +13,8 @@ $std=$_POST['std'];
 
 if($nin !=''){
     move_uploaded_file($tmp_name,"uploads/$image");
-    $sql = "insert into `userdata` (name,email,mobile,nin,dob,photo,standard,
-    status, votes) values ('$name','$email','$mobile','$$enc_nin','$dob',
+    $sql = "insert into `userdata` (mobile,nin,name,email,dob,photo,standard,
+    status, votes) values ('$mobile','$enc_nin','$name','$email','$dob',
     '$image','$std',0,0) ";
 
     $result = mysqli_query($con,$sql);

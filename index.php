@@ -36,13 +36,7 @@
                      title="Please Enter National Identification Number"
                       >
                 </div>
-               <!-- <div class="mb-3">
-                    <select name="std" class="form-control w-70 m-auto">
-                        <option value="group">Group</option>
-                        <option value="voter">Voter</option>
-
-                    </select>
-                </div>-->
+              
                 <button type="submit" class="btn btn-dark my-4">Submit</button>
                 <a href="registration.php" class="text-white">Register</a>
             </form>

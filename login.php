@@ -11,11 +11,11 @@ $std='voter';
 // prepare an sql query to select all rows from the database
 // mysqli_query () function was used to send query to the db
 // We need result to proceed
-$sql="select * from `userdata` where mobile='$mobile' and nin='$nin' ";
+$sql="select * from `userdata` where mobile='$mobile' ";
 $result=mysqli_query($con,$sql);
 if(mysqli_num_rows($result)>0){
     $data=mysqli_fetch_array($result);
-    // if(password_verify($nin,$data['nin'])){
+     if(password_verify($nin,$data['nin'])){
     // mysqli_fetch_array () was used to fetch data from the db
     // We need to check if the password inputted was thesame with the encrypted one
     // password_verify () function was used to verified the hashed password after that
@@ -43,7 +43,7 @@ if(mysqli_num_rows($result)>0){
         window.location="index.php";
     </script>';
 }
-//}
+}
 
 
 ?>

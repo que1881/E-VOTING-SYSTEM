@@ -23,6 +23,7 @@ if(mysqli_num_rows($result)>0){
     $_SESSION['id'] = $data['id'];
     $_SESSION['category'] = $data['category'];
     echo '<script>
+    alert("login successfull");
         window.location="Admindashboard.php";
     </script>';
     }

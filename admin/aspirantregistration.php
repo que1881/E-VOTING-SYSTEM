@@ -25,6 +25,13 @@ if(!isset($_SESSION['id'])){
             </div>
 
             <div class="mb-3">
+                    <input type="text" name="vice_name" class="form-control w-70 m-auto"
+                     placeholder="Enter Running Mate Name"
+                      required="required"
+                     title="FULL NAME">
+            </div>
+
+            <div class="mb-3">
                     <input type="text" name="party" class="form-control w-70 m-auto"
                      placeholder="Enter Political Party"
                       required="required"
@@ -38,6 +45,8 @@ if(!isset($_SESSION['id'])){
                      title="National Identification Number"
                       maxLength="11" minLength="11">
                 </div>
+
+                
 
             <div class="mb-3">
                     <input type="number" name="mobile" class="form-select w-70 m-auto"

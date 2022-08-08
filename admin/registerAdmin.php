@@ -4,6 +4,11 @@
 // Disallow the user from proceding with the page if is a staff
 // Use include () function to import the header module
 session_start();
+if(!isset($_SESSION['id'])){
+    echo '<script>
+    window.location="login.php";
+</script>';
+}
 $category=$_SESSION['category'];
 if( $category=='staff'){
     echo '<script>

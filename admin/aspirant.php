@@ -4,6 +4,7 @@
 include('connect1.php');
 
 $name=$_POST['name'];
+$vice_name=$_POST['vice_name'];
 $nin=$_POST['nin'];
 $mobile=$_POST['mobile'];
 $party=$_POST['party'];
@@ -17,17 +18,17 @@ if($nin !=''){
     //prepairing an sql query that will  insert record into the db
     //use mysqli_query() function to send our query into the db
     //we need the result to proceed or else display an error
-    $sql = "insert into `aspirant_tb` (name,political_party,nin,mobile,position,votes,photo)
-     values ('$name','$party','$nin','$mobile','$position',0,'$image')";
+    $sql = "insert into `aspirant_tb` (name,political_party,nin,mobile,position,votes,photo,vice_name)
+     values ('$name','$party','$nin','$mobile','$position',0,'$image','$vice_name')";
 
     $result = mysqli_query($con,$sql);
         if($result){
-            echo '<div class="alert alert-white" role="alert">
-            <strong>Success</strong> Presidential Aspirant Added Successfully
-          </div>' ;
-          echo "<script>window.open('aspirantregistration.php', '_self')</script>";
-          
-        }else{
+            echo '<script>
+            alert("Presidential Aspirant Added Successfully");
+             window.location="aspirantregistration.php";
+        </script>';
+        }
+        else{
             die(mysqli_error($con));
         }
 }

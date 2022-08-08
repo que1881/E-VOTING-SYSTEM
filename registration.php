@@ -54,8 +54,8 @@
                 <div class="mb-3">
                     <select name="std" class="form-control w-70 m-auto">
                         <option value="aspirant">Aspirant</option>
-                        <option value="voter">Voter</option>
-                        <option value="admin">Admin</option>
+                        <option value="voter">Voters</option>
+                      
                     </select>
                 </div>
                 <button type="submit" name="register" class="btn btn-dark my-4">Register</button>

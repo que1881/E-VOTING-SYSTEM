@@ -19,7 +19,7 @@ if(!isset($_SESSION['id'])){
  
         <div class="card-body">
         <a href="index.php"><button class="btn btn-dark text-light px-3">Back</button></a>
-        <!-- I use $_SESSION['category'] method to indicate the buttons that will be visible
+        <!-- I used $_SESSION['category'] method to indicate the buttons that will be visible
     to the INEC staff and INEC chairman -->
         <?php if($_SESSION['category']=='inec_chairman'){ ?>
         <a href="viewadmin.php"><button class="btn btn-info text-light px-3">View Election Observer</button></a>

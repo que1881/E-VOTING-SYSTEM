@@ -88,6 +88,7 @@ include('header.php');
 
 
 <?php
+// query to delete record from database table
 if (isset($_GET['del'])) {
     $del_id=$_GET['del'];
 

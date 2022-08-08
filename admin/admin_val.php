@@ -26,10 +26,10 @@ if($nin !=''){
 
     $result = mysqli_query($con,$sql);
         if($result){
-            echo '<div class="alert alert-white" role="alert">
-            <strong>Success</strong> Data Inserted Successfully
-          </div>' ;
-          echo "<script>window.open('registerAdmin.php', '_self')</script>";
+            echo '<script>
+            alert("Data Inserted  successfull");
+             window.location="registerAdmin.php";
+        </script>';
           
         }else{
             die(mysqli_error($con));
