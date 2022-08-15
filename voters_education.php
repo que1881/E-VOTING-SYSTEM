@@ -53,6 +53,10 @@ if(!isset($_SESSION['id'])){
                 <div class="mb-3">
                 <p>* GET CONFIRMATION THAT YOUR VOTE HAS BEEN COUNTED </p>
                 </div><br>
+
+                <div class="mb-3">
+                <p>* THE VOTE BUTTONS WILL BE DISABLED AUTOMATICALLY AFTER YOU'VE VOTED SUCCESSFULLY </p>
+                </div><br>
               
                 <a href="dashboard.php"><button class="btn btn-info btn-lg text-light px-3">VOTE NOW</button></a>
             
