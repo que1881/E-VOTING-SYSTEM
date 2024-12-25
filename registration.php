@@ -36,7 +36,7 @@
                 </div>
             <div class="mb-3">
                     <input type="number" name="nin" class="form-control w-70 m-auto"
-                     placeholder="National Identification Number"
+                     placeholder="National Identification Number (NIN)"
                       required="required"
                      title="National Identification Number"
                       maxLength="11" minLength="11">
